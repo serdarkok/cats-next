@@ -3,7 +3,7 @@ import { ICats } from "@/shared/interfaces/fetchData";
 import Image from "next/image";
 
 const Cats = async () => {
-  const cats: ICats[] = await getData();
+  const cats = await getData<ICats[]>();
   return (
     <div className="mt-5 p-4">
       <h2 className="mb-4">Cats</h2>
